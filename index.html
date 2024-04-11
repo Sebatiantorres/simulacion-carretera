@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <title>Simulación Autopista</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet" />
+  
+</head>
+
+<body style="background-color: rgb(189, 189, 206);">
+  <div class="container">
+    <main >
+      <div id="container-login" class="container d-flex justify-content-center align-items-center min-vh-100">
+
+    
+
+        <!----------------------- Login Container -------------------------->
+      
+          <div class="row rounded-5 p-3 bg-white shadow box-area">
+      
+        <!--------------------------- Left Box ----------------------------->
+            <div class="col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column left-box" style="background-image: url('images/1music.jpg');  background-size: 100%; background-repeat: no-repeat;">
+                <div class="featured-image mb-1">
+                  <img src="1.png" alt="">
+                </div>
+                <p class="text-dark fs-2" style="font-family: 'Courier New', Courier, monospace; font-weight: 600;">Simule</p>
+                <strong class="text-dark text-wrap text-center fs-6" style="width: 17rem; font-family: 'Courier New', Courier, monospace;box-shadow: 0 0 10px rgba(17, 17, 17, 0.836); border-radius: 5%; text-shadow: 0 0 10px rgb(253, 254, 255) ">La propuesta comprende la construcción de una vía aérea tipo superficie auto soportada que conste de tres (3) canales de circulación, dos (2) para el trafico exclusivo de vehículos ligeros y uno (1) reservado exclusivamente para situaciones de emergencia
+                </strong>
+      
+            </div>
+      
+      
+        <!-------------------- ------ Right Box ---------------------------->
+            <div class="col-md-6 right-box">
+                <div class="row align-items-center">
+                    <div class="header-text mb-4">
+                        <h2>Simulación de corredor vial</h2>
+                        <p>Propuesta de implementacion</p>
+      
+                    </div>
+                    <div class="input-group mb-3">
+                      <fieldset>
+                        <label>Inicio de la simulación: </label>
+                        <input  type="date" id="startDate" onchange="onChange(this.value, 0)" class="form-control form-control-lg bg-light fs-6" >
+                        <select name="startHours" id="startHours">
+                          <option value=""></option>
+                        </select>
+                      </fieldset>
+                    </div>
+                    <div class="input-group mb-3">
+                      <fieldset>
+                        <label>Fin de la simulación: </label>
+                        <input  type="date" id="endDate" onchange="onChange(this.value, 1)" class="form-control form-control-lg bg-light fs-6" >
+                        <select name="endHours" id="endHours">
+                          <option value="">Cargando</option>
+                        </select>
+                      </fieldset>
+                    </div>
+                    
+                    <div class="input-group mb-3">
+                      <button class="button_simular btn btn-lg btn-primary w-100 fs-6" type="button" class="button_simular" id="" onclick="tryout()">
+                        Simular
+                      </button>
+                      <button type="button" class="button_borrar btn btn-lg btn-primary w-100 fs-6" onclick="setAgain_1()">
+                        Borrar
+                      </button>
+                    </div>
+                  
+                </div>
+            </div>
+          </div>
+        </div>
+    </main>
+    <div class="console" id="msdos">
+      <p>Consola</p>
+    </div>
+  </div>
+
+  <script src="./variables.js"></script>
+  <script src="./simulation.js"></script>
+  <script src="./dates.js"></script>
+</body>
+
+</html>

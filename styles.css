@@ -1,0 +1,181 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+}
+
+html {
+  padding: 10px;
+}
+
+body {
+  color: black;
+  font-family: "Nunito", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 25px;
+  margin-bottom: 20px;
+  /*color: white;*/
+}
+
+.button_simular {
+  padding: 8px 30px;
+  background-color: #01562c;
+  color: white;
+  font-size: 15px;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  transition: ease-out 0.5s;
+  border: none;
+  border-radius: 5%;
+  text-transform: uppercase;
+}
+
+.button_simular:hover {
+  background-color: #072c5a;
+}
+
+.button_simular:nth-child(1) {
+  margin-right: 10px;
+}
+
+.button_borrar {
+  padding: 8px 30px;
+  background-color: #950104;
+  color: white;
+  font-size: 15px;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  transition: ease-out 0.5s;
+  border: none;
+  border-radius: 5%;
+  text-transform: uppercase;
+}
+
+.button_borrar:hover {
+  background-color: #072c5a;
+}
+
+.button_borrar:nth-child(1) {
+  margin-right: 10px;
+}
+
+label {
+  width: 180px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  text-align: right;
+  -moz-appearance: textfield;
+}
+
+fieldset {
+  padding: 10px 12px;
+  margin: 0px 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 55px;
+  border-color: transparent;
+}
+
+select {
+  height: 100%;
+  margin-left: 10px;
+}
+
+form p {
+  text-align: center;
+  font-size: 1.25em;
+}
+
+.console {
+  width: 90%;
+  max-width: 500px;
+  margin: 10vh auto;
+  background-color: #FFF;
+  border-radius: .5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
+}
+
+.console>p {
+  text-align: center;
+  font-weight: bold;
+}
+
+.dashed {
+  border-top: 2px dashed #75adf1;
+  border-bottom: 2px dashed #75adf1;
+  padding: 18px 0px;
+}
+
+.available {
+  color: rgb(47, 223, 47);
+  font-weight: bold;
+}
+
+.activated {
+  color: rgb(197, 223, 47);
+  font-weight: bold;
+}
+
+.alert {
+  color: rgb(223, 47, 47);
+  font-weight: bold;
+}
+
+.report {
+  color: rgb(47, 211, 223);
+  font-weight: bold;
+}
+
+.report-vias {
+  color: rgb(223, 47, 200);
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+.report-results {
+  margin-left: 2rem;
+}
+
+ul {
+  list-style: none;
+  padding: 10px;
+}
+
+li {
+  margin-bottom: 20px;
+}
+
+main {
+  position: relative;
+}
+
+.nombres {
+  text-align: center;
+  margin-top: 10px;
+}
