@@ -1,5 +1,6 @@
 const week = [
   [
+    //norte sur
     {
       startHour: 6,
       startMinutes: 0,
@@ -9,7 +10,7 @@ const week = [
       totals: 119,
       travelDuration: 18,
     },
-    {
+    {//sur norte
       startHour: 6,
       startMinutes: 0,
       endHour: 9,
@@ -20,7 +21,7 @@ const week = [
     },
   ],
   [
-    {
+    {// 11:30 norte sur lunes a viernes
       startHour: 11,
       startMinutes: 30,
       endHour: 13,
@@ -29,7 +30,7 @@ const week = [
       totals: 105,
       travelDuration: 18,
     },
-    {
+    {// 11:30 sur norte  lunes a viernes
       startHour: 11,
       startMinutes: 30,
       endHour: 13,
@@ -40,16 +41,20 @@ const week = [
     },
   ],
   [
-    {
+    {/*Sentido Norte – Sur   (LUNES A VIERNES)
+      5:00 p.m. – 7:30 p.m.   120 vehiculos
+ */
       startHour: 17,
       startMinutes: 0,
-      endHour: 21,
-      endMinutes: 15,
+      endHour: 19,
+      endMinutes: 30,
       duration: 255,
       totals: 120,
       travelDuration: 18,
     },
-    {
+    {/*Sentido Sur – Norte    (LUNES A VIERNES)
+      5:00 p.m. – 9:15 p.m.    76  vehiculos
+      */
       startHour: 17,
       startMinutes: 0,
       endHour: 21,
@@ -62,7 +67,9 @@ const week = [
 ];
 
 const weekend = [
-  [
+  [/*Sentido Norte – Sur   (SABADO A DOMINGO)
+1:00 p.m. – 3:00 p.m.    107 vehiculos
+ */
     {
       startHour: 13,
       startMinutes: 0,
@@ -72,7 +79,9 @@ const weekend = [
       totals: 107,
       travelDuration: 8,
     },
-    {
+    {/* Sentido Sur – Norte    (SABADO A DOMINGO)
+7:00 a.m. – 9:30 a.m.    105 vehiculos
+*/
       startHour: 13,
       startMinutes: 0,
       endHour: 15,
